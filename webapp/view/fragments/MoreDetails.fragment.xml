@@ -1,0 +1,33 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Dialog id="mbd_moreDetails" title="More Details">
+        <VBox id="mbd_vbox1" class="sapUiSmallMargin">
+            <HBox id="mbd_hbox1">
+                <Label text="Bank Account Number" id="mbd_accNum" class="sapUiSmallMarginEnd"></Label>
+                <Text text="38473***********" id="mbd_accVal" class="_sapUiSmallMarginBegin"></Text>
+            </HBox>
+
+            <HBox id="mbd_hbox2">
+                <Label text="Account Holder Name" id="mbd_accHdName" class="sapUiSmallMarginEnd"></Label>
+                <Text text="Ayan Nath" id="mbd_accHdNameVal" class="_sapUiSmallMarginBegin"></Text>
+            </HBox>
+
+            <HBox id="mbd_hbox3" class="sapUiSmallMarginBottom">
+                <Label text="IFS Code" id="mbd_accifsc" class="sapUiSmallMarginEnd"></Label>
+                <Text text="000000*****" id="mbd_accifscVal" class="_sapUiSmallMarginBegin"></Text>
+            </HBox>
+
+            <HBox id="mbd_hbox4">
+                <Label text="Customer ID" id="mbd_custId" class="sapUiSmallMarginEnd"></Label>
+                <Text text="*****12345" id="mbd_custIdVal" class="_sapUiSmallMarginBegin"></Text>
+            </HBox>
+            <HBox id="mbd_hbox5">
+                <Label text="Address" id="mbd_address" class="sapUiSmallMarginEnd"></Label>
+                <Text text="123, Hamba Lane," id="mbd_addressVal" class="_sapUiSmallMarginBegin"></Text>
+            </HBox>
+        </VBox>
+        <beginButton>
+            <Button id="mbd_mdCloseBtn" text="Close" type="Emphasized" press=".onMoreDetailsClose"></Button>
+        </beginButton>
+    </Dialog>
+</core:FragmentDefinition>
