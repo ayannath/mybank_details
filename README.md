@@ -15,6 +15,7 @@
 |**UI5 Version**<br>1.146.0|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>True, see https://www.npmjs.com/package/@sap-ux/eslint-plugin-fiori-tools#rules for the eslint rules.|
+|**Youtube link**<br>https://www.youtube.com/watch?v=bBiyOtRscSg&list=PLYg6BPdx0gBF1dW16mylFfEKTAE-JlstG&index=1|
 
 ## mybank_details
 
