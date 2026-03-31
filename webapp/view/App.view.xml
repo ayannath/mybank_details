@@ -12,9 +12,7 @@
                 <!-- fragment include (xmlns:core="sap.ui.core" added) -->
                 <core:Fragment id="mbd_frgBankDetailsFragment" fragmentName="com.sap.mybankdetails.view.fragments.BankDetails" type="XML" />
                 <!-- // fragment include -->
-                <Button id="mbd_openBankDetailsBtn" type="Neutral" text="{i18n>findMoreBtn}" 
-                    class="sapUiSmallMarginBegin" press=".onOpenBankDetails"></Button>
             </content>
-        </Page>
+        </Page>     
     </App>
 </mvc:View>
