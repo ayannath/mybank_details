@@ -1,6 +1,20 @@
 <mvc:View controllerName="com.sap.mybankdetails.controller.App"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <App id="app">
+        <Page id="page" title="{i18n>appTitle}">
+            <!-- <Page id="page" title="{i18n>title}"> -->
+            <headerContent>
+                <Button id="mbd_demoBtn" type="Emphasized" text="{i18n>homebtn}"></Button>
+            </headerContent>
+            <content>
+                <!-- fragment include (xmlns:core="sap.ui.core" added) -->
+                <core:Fragment id="mbd_frgBankDetailsFragment" fragmentName="com.sap.mybankdetails.view.fragments.BankDetails" type="XML" />
+                <!-- // fragment include -->
+                <Button id="mbd_openBankDetailsBtn" type="Neutral" text="{i18n>findMoreBtn}" 
+                    class="sapUiSmallMarginBegin" press=".onOpenBankDetails"></Button>
+            </content>
+        </Page>
+    </App>
 </mvc:View>
