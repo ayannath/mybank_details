@@ -12,8 +12,17 @@
                 <!-- fragment include (xmlns:core="sap.ui.core" added) -->
                 <core:Fragment id="mbd_frgBankDetailsFragment" fragmentName="com.sap.mybankdetails.view.fragments.BankDetails" type="XML" />
                 <!-- // fragment include -->
-                <Button id="mbd_openBankDetailsBtn" type="Neutral" text="{i18n>findMoreBtn}" 
-                    class="sapUiSmallMarginBegin" press=".onOpenBankDetails"></Button>
+
+                <Panel expandable="true" headerText="Card Details" width="auto" class="sapUiResponsiveMargin" id="mbd_panelAccountList">
+                    <content>
+                        <List id="myList" mode="MultiSelect" headerText="Inverted Info State" 
+                        items="{ path: ''}">
+                            <items>
+                                <StandardListItem id="mbd_cardList" title="title" description="desc" icon="icon" iconInset="false" highlight="Success" info="info" infoState="Error" infoStateInverted="true" />
+                            </items>
+                        </List>
+                    </content>
+                </Panel>
             </content>
         </Page>
     </App>

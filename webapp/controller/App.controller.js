@@ -30,7 +30,7 @@ sap.ui.define([
             let appLang;
             if (navigator.language == "en")
                 appLang = "i18n";
-            else if (navigator.language == "es")
+            else if (navigator.language == "es" || navigator.language == "es-ES")
                 appLang = "i18n_es";
             else
                 appLang = "i18n";
