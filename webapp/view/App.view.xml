@@ -3,26 +3,15 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core">
     <App id="app">
-        <Page id="page" title="{i18n>appTitle}">
-            <!-- <Page id="page" title="{i18n>title}"> -->
+        <Page id="page" title="{i18n>title}">
             <headerContent>
-                <Button id="mbd_demoBtn" type="Emphasized" text="{i18n>homebtn}"></Button>
+                <Button id="mbd_demoBtn" type="Emphasized" text="{i18n>homebtn}" />
             </headerContent>
             <content>
-                <!-- fragment include (xmlns:core="sap.ui.core" added) -->
+                <!-- fragment include (xmlns:core="sap.ui.core" added) ("com.sap.mybankdetails" from manifest.json) -->
                 <core:Fragment id="mbd_frgBankDetailsFragment" fragmentName="com.sap.mybankdetails.view.fragments.BankDetails" type="XML" />
+                <core:Fragment id="mbd_frgCardDetailsFragment" fragmentName="com.sap.mybankdetails.view.fragments.CardDetails" type="XML" />
                 <!-- // fragment include -->
-
-                <Panel expandable="true" headerText="Card Details" width="auto" class="sapUiResponsiveMargin" id="mbd_panelAccountList">
-                    <content>
-                        <List id="myList" mode="MultiSelect" headerText="Inverted Info State" 
-                        items="{ path: ''}">
-                            <items>
-                                <StandardListItem id="mbd_cardList" title="title" description="desc" icon="icon" iconInset="false" highlight="Success" info="info" infoState="Error" infoStateInverted="true" />
-                            </items>
-                        </List>
-                    </content>
-                </Panel>
             </content>
         </Page>
     </App>
