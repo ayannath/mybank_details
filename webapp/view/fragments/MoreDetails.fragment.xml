@@ -1,29 +1,29 @@
 <core:FragmentDefinition xmlns:core="sap.ui.core"
     xmlns="sap.m">
     <Dialog id="mbd_moreDetails" title="More Details">
-        <VBox id="mbd_mdVbox1" class="sapUiSmallMargin">
+        <VBox binding="{/accountDetails}" id="mbd_mdVbox1" class="sapUiSmallMargin">
             <HBox id="mbd_mdHbox1">
                 <Label text="{i18n>mdlaccNum}" id="mbd_mdAccNum" class="sapUiSmallMarginEnd"></Label>
-                <Text text="38473***********" id="mbd_mdAccVal" class="_sapUiSmallMarginBegin"></Text>
+                <Text text="{AccNum}" id="mbd_mdAccVal" class="_sapUiSmallMarginBegin"></Text>
             </HBox>
 
             <HBox id="mbd_mdHbox2">
                 <Label text="{i18n>mdlaccHldName}" id="mbd_mdAccHdName" class="sapUiSmallMarginEnd"></Label>
-                <Text text="Ayan Nath" id="mbd_mdAccHdNameVal" class="_sapUiSmallMarginBegin"></Text>
+                <Text text="{Name}" id="mbd_mdAccHdNameVal" class="_sapUiSmallMarginBegin"></Text>
             </HBox>
 
             <HBox id="mbd_mdHbox3" class="sapUiSmallMarginBottom">
                 <Label text="{i18n>mdlIfsCode}" id="mbd_mdAccifsc" class="sapUiSmallMarginEnd"></Label>
-                <Text text="000000*****" id="mbd_mdAccifscVal" class="_sapUiSmallMarginBegin"></Text>
+                <Text text="{Ifsc}" id="mbd_mdAccifscVal" class="_sapUiSmallMarginBegin"></Text>
             </HBox>
 
             <HBox id="mbd_hbox4">
                 <Label text="{i18n>mdlCstID}" id="mbd_custId" class="sapUiSmallMarginEnd"></Label>
-                <Text text="*****12345" id="mbd_custIdVal" class="_sapUiSmallMarginBegin"></Text>
+                <Text text="{CustID}" id="mbd_custIdVal" class="_sapUiSmallMarginBegin"></Text>
             </HBox>
             <HBox id="mbd_hbox5">
                 <Label text="{i18n>mdlAddress}" id="mbd_address" class="sapUiSmallMarginEnd"></Label>
-                <Text text="123, Hamba Lane," id="mbd_addressVal" class="_sapUiSmallMarginBegin"></Text>
+                <Text text="{Address/house}, {Address/street}, {Address/city}, {Address/zipcode}, {Address/state}, {Address/country}" id="mbd_addressVal" class="_sapUiSmallMarginBegin"></Text>
             </HBox>
         </VBox>
         

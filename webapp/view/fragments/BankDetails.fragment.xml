@@ -3,24 +3,27 @@
     <!-- <Text text="This is my fragment" id="mbd_frText1"></Text> -->
     <Panel expandable="false" headerText="Account Details" width="auto" class="sapUiResponsiveMargin" id="mbd_panelAccountDetails">
         <content>
-            <HBox id="mbd_hbbd1" >
+            <HBox id="mbd_hbbd1">
                 <Avatar src="{/Woman01}" displaySize="XL" showBorder="true" press="onPress" id="mbd_avtrBankDetails"/>
+                
                 <VBox id="mbd_vbox1" class="sapUiSmallMargin">
                     <Title text="{i18n>bdTitle}" id="mbd_accTitle" level="H1"></Title>
+
                     <HBox id="mbd_hbox1">
                         <Label text="{i18n>bdlaccNum}" id="mbd_accNum" class="sapUiSmallMarginEnd"></Label>
-                        <Text text="38473***********" id="mbd_accVal" class="_sapUiSmallMarginBegin"></Text>
+                        <Text text="{/bankDetails/AccNum}" id="mbd_accVal" class="_sapUiSmallMarginBegin"></Text>
                     </HBox>
 
                     <HBox id="mbd_hbox2">
                         <Label text="{i18n>bdlaccHldName}" id="mbd_accHdName" class="sapUiSmallMarginEnd"></Label>
-                        <Text text="Ayan Nath" id="mbd_accHdNameVal" class="_sapUiSmallMarginBegin"></Text>
+                        <Text text="{/bankDetails/Name}" id="mbd_accHdNameVal" class="_sapUiSmallMarginBegin"></Text>
                     </HBox>
 
                     <HBox id="mbd_hbox3">
                         <Label text="{i18n>bdlIfsCode}" id="mbd_accifsc" class="sapUiSmallMarginEnd"></Label>
-                        <Text text="000000*****" id="mbd_accifscVal" class="_sapUiSmallMarginBegin"></Text>
+                        <Text text="{/ifscode}" id="mbd_accifscVal" class="_sapUiSmallMarginBegin"></Text>
                     </HBox>
+
                     <Button id="mbd_openBankDetailsBtn" type="Neutral" text="{i18n>findMoreBtn}" class="sapUiSmallMarginTop" press=".onOpenBankDetails"></Button>
                 </VBox>
             </HBox>
