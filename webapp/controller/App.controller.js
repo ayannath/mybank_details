@@ -5,7 +5,7 @@ sap.ui.define([
 
     return Controller.extend("com.sap.mybankdetails.controller.App", {
         onInit() {
-
+            
             let oData = {
                 // Property Binding
                 bankDetails: {
@@ -30,7 +30,7 @@ sap.ui.define([
                     }
                 },
                 // Aggregation/List Binding
-                cardDetails: [
+                /*: [
                     {
                         "cardType": "debit card",
                         "cardNum": "0000-0012-3451-1111",
@@ -52,7 +52,7 @@ sap.ui.define([
                         "assinDate": "20 Aug 2016",
                         "state": true
                     }
-                ]
+                ]*/
             };
 
             // common for all
@@ -60,13 +60,13 @@ sap.ui.define([
             oModel.setData(oData);                              // store data in model
             this.getView().setModel(oModel);                    // data applied to view label
 
-            // new Model from same oData object for list
-            let lModel = new sap.ui.model.json.JSONModel(oData);
-            this.getView().setModel(lModel, "oBankDetails");    // "oBankDetails" is "JSON model" name
-
+            // oData from external json file
+            /*let lModel = new sap.ui.model.json.JSONModel(oData);
+            this.getView().setModel(lModel, "oBankDetails"); */   // "oBankDetails" is "JSON model" name from manifest.json
+            
+            
             // alert("this is onInit block");
             // debugger
-
             /* ============== checking browser language and setting the global resource model
              *  change the language from setting in browser to take effect 
                 //in "console"
