@@ -4,7 +4,7 @@
     <Panel expandable="false" headerText="Account Details" width="auto" class="sapUiResponsiveMargin" id="mbd_panelAccountDetails">
         <content>
             <HBox id="mbd_hbbd1">
-                <Avatar src="{/Woman01}" displaySize="XL" showBorder="true" press="onPress" id="mbd_avtrBankDetails"/>
+                <Avatar src="{/profile}" displaySize="XL" showBorder="true" press="onPress" id="mbd_avtrBankDetails"/>
                 
                 <VBox id="mbd_vbox1" class="sapUiSmallMargin">
                     <Title text="{i18n>bdTitle}" id="mbd_accTitle" level="H1"></Title>

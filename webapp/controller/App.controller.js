@@ -64,7 +64,12 @@ sap.ui.define([
             /*let lModel = new sap.ui.model.json.JSONModel(oData);
             this.getView().setModel(lModel, "oBankDetails"); */   // "oBankDetails" is "JSON model" name from manifest.json
             
-            
+            /* avatar image binding for "bank details fragment" */
+            let oProfileModel = new sap.ui.model.json.JSONModel(
+                {profile: sap.ui.require.toUrl("com/sap/mybankdetails/images/profile_image.png")}
+            );
+            this.getView().getModel(oProfileModel);
+
             // alert("this is onInit block");
             // debugger
             /* ============== checking browser language and setting the global resource model
@@ -85,6 +90,9 @@ sap.ui.define([
                 var i18nModel = this.getOwnerComponent().getModel("i18n")
                 this.getOwnerComponent().setModel(i18nModel, "i18n")
             }*/
+
+            
+
 
             let appLang;
             if (navigator.language == "en")
