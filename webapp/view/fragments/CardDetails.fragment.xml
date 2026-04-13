@@ -4,11 +4,20 @@
         <content>
             <List id="myList" items="{oBankDetails>/cardDetails}" width="50%">
                 <items>
-                    <StandardListItem id="mbd_card1" title="{=${oBankDetails>cardCompany}.toUpperCase()} ({oBankDetails>cardNum})" description="{=${oBankDetails>cardType}.toUpperCase()} assigned on: {oBankDetails>assinDate}" icon="sap-icon://credit-card" iconInset="false" highlight="{=${oBankDetails>state} === true ? 'Success' : 'Error'}" info="{=${oBankDetails>state} === true ? 'Active' : 'Expired'}" infoState="{=${oBankDetails>state} === true ? 'Success' : 'Error'}" infoStateInverted="true" />
+                    <StandardListItem id="mbd_card1" 
+                        title="{=${oBankDetails>cardCompany}.toUpperCase()} ({oBankDetails>cardNum})" 
+                        description="{=${oBankDetails>cardType}.toUpperCase()} assigned on: {oBankDetails>assinDate}" 
+                        icon="sap-icon://credit-card" 
+                        iconInset="false" 
+                        highlight="{=${oBankDetails>state} === true ? 'Success' : 'Error'}" 
+                        info="{=${oBankDetails>state} === true ? 'Active' : 'Expired'}" 
+                        infoState="{=${oBankDetails>state} === true ? 'Success' : 'Error'}" 
+                        infoStateInverted="true" 
+                    />
 
                     <!-- <StandardListItem id="mbd_card2" title="VISA Card (9876543210987654)" description="Credit Card: assigned on 26 Aug 2019" icon="sap-icon://credit-card" iconInset="false" highlight="Error" info="Error" infoState="Error" infoStateInverted="true" />
-                                <StandardListItem id="mbd_card3" title="Rupay Card (0000000000123456)" description="Debit Card: assigned on 19 Aug 2017" icon="sap-icon://credit-card" iconInset="false" highlight="Success" info="Success" infoState="Success" infoStateInverted="true" />
-                                <StandardListItem id="mbd_card4" title="Aramex Card (0000000000123456)" description="Debit Card: assigned on 19 Aug 2017" icon="sap-icon://credit-card" iconInset="false" highlight="Warning" info="Warning" infoState="Warning" infoStateInverted="true" /> -->
+                    <StandardListItem id="mbd_card3" title="Rupay Card (0000000000123456)" description="Debit Card: assigned on 19 Aug 2017" icon="sap-icon://credit-card" iconInset="false" highlight="Success" info="Success" infoState="Success" infoStateInverted="true" />
+                    <StandardListItem id="mbd_card4" title="Aramex Card (0000000000123456)" description="Debit Card: assigned on 19 Aug 2017" icon="sap-icon://credit-card" iconInset="false" highlight="Warning" info="Warning" infoState="Warning" infoStateInverted="true" /> -->
                 </items>
             </List>
         </content>
