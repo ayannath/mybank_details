@@ -1,0 +1,25 @@
+{
+    "cardDetails": [
+        {
+            "cardType": "debit card",
+            "cardNum": "0000-0012-3451-1111",
+            "cardCompany": "master card",
+            "assinDate": "23 Aug 2025",
+            "state": true
+        },
+        {
+            "cardType": "credit card",
+            "cardNum": "0000-0012-3451-2222",
+            "cardCompany": "visa card",
+            "assinDate": "17 Aug 2026",
+            "state": false
+        },
+        {
+            "cardType": "debit card",
+            "cardNum": "0000-0012-3451-3333",
+            "cardCompany": "rupay card",
+            "assinDate": "20 Aug 2024",
+            "state": true
+        }
+    ]
+}
